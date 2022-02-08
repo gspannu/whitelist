@@ -1,6 +1,6 @@
-aax-eu.amazon.co.uk
-eurotunnel.com
-brave.com
-ad.doubleclick.net
-mail-ads.google.com
+@@||aax-eu.amazon.co.uk^
+@@||eurotunnel.com^
+@@||brave.com^
+@@||ad.doubleclick.net^
+@@||mail-ads.google.com^
 @@||fastly.net^
