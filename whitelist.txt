@@ -1,6 +1,8 @@
-#  Sample entry @@||fastly.net^
 aax-eu.amazon.co.uk
 eurotunnel.com
-brave.com
-ad.doubleclick.net
-mail-ads.google.com
+#
+# brave.com
+# mail-ads.google.com
+# ad.doubleclick.net
+#
+# Sample entry @@||fastly.net^
