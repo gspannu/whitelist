@@ -1,6 +1,6 @@
 aax-eu.amazon.co.uk
 eurotunnel.com
-bp1.ad.bp.com
+@@||bp1.ad.bp.com
 #@@||wpad.bp1.ad.bp.com^$important
 #@@||we1p206670001.bp1.ad.bp.com^$important
 #
