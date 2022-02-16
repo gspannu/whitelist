@@ -1,11 +1,10 @@
-aax-eu.amazon.co.uk
-eurotunnel.com
-@@||bp1.ad.bp.com^$important
-#@@||wpad.bp1.ad.bp.com^$important
-#@@||we1p206670001.bp1.ad.bp.com^$important
-#
-# brave.com
+@@||aax-eu.amazon.co.uk^
+@@||eurotunnel.com^
+@@||bp1.ad.bp.com^
+# --------------------
+# @@||brave.com^
 # mail-ads.google.com
 # ad.doubleclick.net
-#
+# --------------------
 # Sample entry @@||fastly.net^
+# Unblocks fastly.net and all sub-domains
