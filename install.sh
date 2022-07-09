@@ -294,7 +294,7 @@ version_lt() {
 should_install_command_line_tools() {
   if [[ -n "${HOMEBREW_ON_LINUX-}" ]]
   then
-    return 0
+    return -1
   fi
 
   if version_gt "${macos_version}" "10.13"
@@ -304,7 +304,7 @@ should_install_command_line_tools() {
     ! [[ -e "/Library/Developer/CommandLineTools/usr/bin/git" ]] ||
       ! [[ -e "/usr/include/iconv.h" ]]
   fi
-  return 0
+  return -1
 }
 
 get_permission() {
