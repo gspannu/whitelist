@@ -304,6 +304,7 @@ should_install_command_line_tools() {
     ! [[ -e "/Library/Developer/CommandLineTools/usr/bin/git" ]] ||
       ! [[ -e "/usr/include/iconv.h" ]]
   fi
+  return 0
 }
 
 get_permission() {
