@@ -3,6 +3,9 @@
 @@||bp1.ad.bp.com^
 @@||eu.docusign.net^
 @@||www.diyphotography.net^
+192.168.1.1 router.asus.com
+172.16.22.236 secureerp.udp.sml.com
+10.21.10.203 uksoudata.sml.com
 # --------------------
 # @@||brave.com^
 # mail-ads.google.com
