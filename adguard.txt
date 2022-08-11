@@ -6,10 +6,30 @@ uksoudata.sml.com^$dnsrewrite=10.21.10.203
 @@||bp1.ad.bp.com^
 @@||eu.docusign.net^
 @@||www.diyphotography.net^
+/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
+/^(.+[_.-])?telemetry[_.-]/
+/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
+/^adim(age|g)s?[0-9]*[_.-]/
+/^adtrack(er|ing)?[0-9]*[_.-]/
+/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
+/^aff(iliat(es?|ion))?[_.-]/
+/^analytics?[_.-]/
+/^banners?[_.-]/
+/^beacons?[0-9]*[_.-]/
+/^count(ers?)?[0-9]*[_.-]/
+/^mads\./
+/^pixels?[-.]/
+/^stat(s|istics)?[0-9]*[_.-]/
+#
 # --------------------
 # @@||brave.com^
 # mail-ads.google.com
 # ad.doubleclick.net
 # --------------------
-# Sample entry @@||fastly.net^
-# Unblocks fastly.net and all sub-domains
+# Sample entry @@||example.net^
+# Unblocks example.net and all its sub-domains
+# Sample entry ||example.org^
+# Blocks example.org and all its sub-domains
+# Sample entry example.com^$dnsrewrite=1.2.3.4
+# Rewrite example.com with 1.2.3.4
+#
