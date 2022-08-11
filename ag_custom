@@ -1,5 +1,5 @@
 router.asus.com^$dnsrewrite=192.168.1.1
-secureerp.udp.sml.com^$dnsrewrite=172.16.22.236 
+secureerp.udp.sml.com^$dnsrewrite=172.16.22.236
 uksoudata.sml.com^$dnsrewrite=10.21.10.203
 @@||aax-eu.amazon.co.uk^
 @@||eurotunnel.com^
@@ -23,8 +23,8 @@ uksoudata.sml.com^$dnsrewrite=10.21.10.203
 #
 # --------------------
 # @@||brave.com^
-# mail-ads.google.com
-# ad.doubleclick.net
+# @@||mail-ads.google.com^
+# @@||ad.doubleclick.net^
 # --------------------
 # Sample entry @@||example.net^
 # Unblocks example.net and all its sub-domains
