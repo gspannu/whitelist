@@ -1,11 +1,25 @@
-router.asus.com^$dnsrewrite=192.168.50.1
+# ------ Block ._dns-sd._udp ------#
+#/^.*p\.(([0-9]{1,3}\.){4})in-addr\.arpa$/
+#||_dns-sd._udp.home^$dnsrewrite=NXDOMAIN;;
+# ------------ REWRITES ----------------#
+router.asus.com^$dnsrewrite=192.168.1.250
+asus.home^$dnsrewrite=192.168.1.250
+opnsense.home^$dnsrewrite=192.168.1.1
+pfsense.home^$dnsrewrite=192.168.1.1
+proxmox.home^$dnsrewrite=192.168.1.240
 secureerp.udp.sml.com^$dnsrewrite=172.16.22.236
 uksoudata.sml.com^$dnsrewrite=10.21.10.203
-@@||aax-eu.amazon.co.uk^
-@@||eurotunnel.com^
-@@||bp1.ad.bp.com^
-@@||eu.docusign.net^
-@@||www.diyphotography.net^
+# ------------ WHITELIST ---------------- #
+@@||metrics.icloud.com^
+# @@||aax-eu.amazon.co.uk^
+# @@||eurotunnel.com^
+# @@||bp1.ad.bp.com^
+# @@||eu.docusign.net^
+# @@||www.diyphotography.net^
+# @@||brave.com^
+# @@||mail-ads.google.com^
+# @@||ad.doubleclick.net^
+# --------- REGEX --------- #
 /^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
 /^(.+[_.-])?telemetry[_.-]/
 /^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
@@ -20,16 +34,10 @@ uksoudata.sml.com^$dnsrewrite=10.21.10.203
 /^mads\./
 /^pixels?[-.]/
 /^stat(s|istics)?[0-9]*[_.-]/
-#
-# --------------------
-# @@||brave.com^
-# @@||mail-ads.google.com^
-# @@||ad.doubleclick.net^
-# --------------------
-# Sample entry @@||example.net^
-# Unblocks example.net and all its sub-domains
-# Sample entry ||example.org^
-# Blocks example.org and all its sub-domains
-# Sample entry example.com^$dnsrewrite=1.2.3.4
-# Rewrite example.com with 1.2.3.4
-#
+# ------ README ------ #
+# Sample entry @@||example.net^ - Uunblocks example.net and all its sub-domains
+# Sample entry ||example.org^.  - Blocks example.org and all its sub-domains
+# Sample entry example.com^$dnsrewrite=1.2.3.4. - Rewrite example.com with 1.2.3.4
+# ||example.com^$dnsrewrite=NXDOMAIN;;          - Responds with an NXDOMAIN code.
+# Block numerous lb._dns-sd._udp queries
+# https://www.reddit.com/r/pihole/comments/i9s0jx/how_to_deal_with_lb_dnssd_udp01168192inaddrarpa/?sort=old
