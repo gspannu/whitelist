@@ -36,7 +36,7 @@ def fetch_url(url):
     return response
 
 
-url_regexps_remote = 'https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list'
+url_regexps_remote = 'https://raw.githubusercontent.com/gspannu/dnsfilter/main/mmotti-regex.txt'
 install_comment = 'github.com/mmotti/pihole-regex'
 
 cmd_restart = ['pihole', 'restartdns', 'reload']
