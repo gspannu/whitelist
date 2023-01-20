@@ -1,6 +1,7 @@
 # Copy of https://github.com/mmotti
-# Run the install.py alos copied in the same folder.
-# 
+# Run the mmotti-pihole.py also copied in the same folder.
+# mmotti-pihole.py Line 39 edited to iuse this file instead of original
+# curl -sSl https://raw.githubusercontent.com/gspannu/dnsfilter/main/mmotti-pihole.py | sudo python3
 
 # Regex filters provided by MMotti
 # https://github.com/mmotti
